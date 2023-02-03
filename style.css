@@ -14,6 +14,16 @@ footer {
     padding-top: 1rem;
     height: 2.5rem;
     text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .calculator {
@@ -25,12 +35,27 @@ footer {
 }
 
 .screen {
-    width: 360px;
+    width: 320px;
     height: 100px;
     margin: 20px auto;
     border: 2px solid black;
     border-radius: 0.5rem;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+.screenLast {
+    min-height: 32px;
+    font-size: 20px;
+    text-align: right;
+}
+
+.screenCurrent {
+    min-height: 64px;
+    font-size: 40px;
+    text-align: right;
 }
 
 .buttons {
@@ -38,12 +63,17 @@ footer {
     justify-content: space-around;
 }
 
+button {
+    cursor: pointer;
+}
+
 .clear, .delete {
     border: 2px solid black;
-    padding: 20px 67px;
+    padding: 20px 55px;
     border-radius: 0.5rem;
     margin-top: 5px;
     margin-bottom: 10px;
+    font-size: 20px;
 }
 
 .clear {
